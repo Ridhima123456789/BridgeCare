@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="48" height="48" class="inline-block align-middle mr-2">
+  <!-- Background subtle glow for dark modes (optional, transparent by default) -->
+  <defs>
+    <linearGradient id="bridgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" /> <!-- Primary Teal/Sky -->
+      <stop offset="100%" stop-color="#0f172a" /> <!-- Dark Slate -->
+    </linearGradient>
+  </defs>
+
+  <!-- Left Arch: Representing the Youth / Renewal -->
+  <path d="M 30,65 A 20,20 0 0,1 70,65" 
+        fill="none" 
+        stroke="#0ea5e9" 
+        stroke-width="8" 
+        stroke-linecap="round" />
+
+  <!-- Right Arch: Representing the Seniors / Foundation -->
+  <path d="M 45,65 A 20,20 0 0,1 85,65" 
+        fill="none" 
+        stroke="#111827" 
+        stroke-width="8" 
+        stroke-linecap="round" 
+        opacity="0.85" />
+
+  <!-- The Bridge / Connection Node -->
+  <circle cx="57" cy="48" r="5" fill="#2dd4bf" />
+</svg>
