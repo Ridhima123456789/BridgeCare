@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BridgeCare | Coming Soon</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0f766e",
+                        dark: "#111827",
+                        cream: "#fdfbf7",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #fdfbf7;
+        }
+
+        .glass {
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-900 bg-cream antialiased">
+
+    <!-- ========================================= -->
+    <!-- NAVBAR -->
+    <!-- ========================================= -->
+    <header class="sticky top-0 z-50 bg-cream/80 glass border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <a href="#" class="text-2xl font-bold tracking-tight text-dark">
+                    BridgeCare
+                </a>
+
+                <a href="#waitlist"
+                    class="inline-flex items-center rounded-full bg-primary text-white px-5 py-2.5 text-sm font-semibold shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                    Join Waitlist
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================= -->
+    <!-- HERO SECTION -->
+    <!-- ========================================= -->
+    <section class="relative overflow-hidden">
+        <!-- Decorative Shapes -->
+        <div class="absolute top-0 left-0 w-72 h-72 bg-teal-100 rounded-full blur-3xl opacity-40 -translate-x-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-80 h-80 bg-cyan-100 rounded-full blur-3xl opacity-40 translate-x-1/3"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-32 relative">
+
+            <div class="max-w-4xl mx-auto text-center">
+
+                <!-- Small Badge -->
+                <div
+                    class="inline-flex items-center gap-2 rounded-full border border-teal-200 bg-white px-4 py-2 text-sm text-primary font-medium mb-8 shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+                    Coming Soon
+                </div>
+
+                <h1
+                    class="text-5xl md:text-7xl font-extrabold tracking-tight text-dark leading-tight">
+                    BridgeCare:
+                    <span class="text-primary block mt-2">
+                        Where Wisdom Meets Innocence
+                    </span>
+                </h1>
+
+                <p
+                    class="mt-8 text-lg md:text-xl leading-relaxed text-gray-600 max-w-3xl mx-auto">
+                    Reviving the Indian joint-family ecosystem by opening premium
+                    daycares inside existing senior living homes. Ending elder
+                    loneliness while solving urban childcare demands.
+                </p>
+
+                <!-- Waitlist Form -->
+                <div id="waitlist"
+                    class="mt-12 max-w-2xl mx-auto bg-white rounded-3xl border border-gray-100 shadow-xl p-4">
+
+                    <form class="flex flex-col sm:flex-row gap-3">
+                        <input
+                            type="email"
+                            placeholder="Enter your email address"
+                            class="flex-1 px-5 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary text-gray-700" />
+
+                        <button
+                            type="submit"
+                            class="px-8 py-4 rounded-2xl bg-primary text-white font-semibold hover:bg-teal-700 transition-all duration-300 hover:shadow-lg">
+                            Join the Waitlist
+                        </button>
+                    </form>
+
+                    <p class="text-sm text-gray-500 mt-3">
+                        Be the first to hear about our launch and pilot programs.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- HOW IT WORKS -->
+    <!-- ========================================= -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-dark">
+                    The 3-Step Ecosystem
+                </h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    A simple model creating value for children, parents, and seniors.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Card 1 -->
+                <div
+                    class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-teal-50 flex items-center justify-center mb-6">
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-7 h-7 text-primary"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 7h16M4 12h16M4 17h10" />
+                        </svg>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-dark mb-4">
+                        Seamless Integration
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        We open premium, fully-equipped daycares inside existing
+                        senior living facilities, maximizing unused infrastructure
+                        and creating vibrant shared spaces.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-teal-50 flex items-center justify-center mb-6">
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-7 h-7 text-primary"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M17 20h5V4H2v16h5m10 0v-4a3 3 0 10-6 0v4m6 0H11" />
+                        </svg>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-dark mb-4">
+                        Intergenerational Bonds
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Children receive loving care and exposure to traditional
+                        values, while seniors enjoy companionship, purpose, and
+                        meaningful daily engagement.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-teal-50 flex items-center justify-center mb-6">
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-7 h-7 text-primary"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-dark mb-4">
+                        Mutual Growth
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Parents gain trusted childcare, seniors beat isolation,
+                        children flourish, and an extraordinary community grows
+                        stronger together.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- FINANCIAL ADVANTAGE -->
+    <!-- ========================================= -->
+    <section class="py-24">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+
+            <div
+                class="relative overflow-hidden rounded-[2rem] bg-dark text-white p-10 md:p-16 shadow-2xl">
+
+                <!-- Decorative Elements -->
+                <div
+                    class="absolute -top-16 -right-16 w-56 h-56 bg-primary/20 rounded-full blur-3xl">
+                </div>
+
+                <div class="relative z-10">
+
+                    <span
+                        class="inline-flex rounded-full bg-white/10 px-4 py-2 text-sm font-medium mb-6">
+                        Financial Advantage
+                    </span>
+
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                        <div>
+                            <h2 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                                60% Lower
+                                <span class="text-teal-300 block">
+                                    Setup Costs
+                                </span>
+                            </h2>
+                        </div>
+
+                        <div>
+                            <p class="text-lg text-gray-300 leading-relaxed">
+                                By leveraging existing senior living infrastructure,
+                                BridgeCare eliminates the massive cost of acquiring
+                                and building new childcare real estate.
+                            </p>
+
+                            <p class="text-lg text-gray-300 leading-relaxed mt-5">
+                                The result is a highly profitable, sustainable,
+                                and asset-light social enterprise model that can
+                                scale rapidly while creating measurable social impact
+                                from day one.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================= -->
+    <footer class="border-t border-gray-200">
+        <div
+            class="max-w-7xl mx-auto px-6 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+
+            <p class="text-gray-500 text-sm">
+                © 2026 BridgeCare. All rights reserved.
+            </p>
+
+            <div class="flex items-center gap-6">
+                <a href="#"
+                    class="text-gray-500 hover:text-primary transition-colors">
+                    Instagram
+                </a>
+
+                <a href="#"
+                    class="text-gray-500 hover:text-primary transition-colors">
+                    LinkedIn
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
